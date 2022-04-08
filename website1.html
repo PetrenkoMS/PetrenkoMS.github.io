@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
+<!--    <script defer src="js/bootstrap.bundle.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/website1.css">
+    <title>It's about cars</title>
+
+    <script type="text/javascript">
+    window.onload = function() {
+        var button_on = document.getElementById('buttonColorBg');
+        var buttom_off = document.getElementById('buttonColorBack')
+        var color = document.getElementById('colorBg');
+
+        button_on.onclick = function() {
+             document.body.style.backgroundColor = colorBg.value;
+        }
+
+        buttom_off.onclick = function() {
+             document.body.style.background = "none";
+        }
+    }
+
+
+
+    </script>
+
+
+</head>
+<body>
+    <!--Меню-->
+    <div class="navbar navbar-inverse fixed-top navbar-expand-md"> <!--Заголовок. Отображает строку навигации; черного цвета(переопределил в css; зафиксирован наверху страницы-->
+        <div class="container" style="margin-bottom: -15px; margin-top: -10px;">
+            <a class="navbar-brand logotip" href="#">Михаил</a>
+            <a class="btn btn-navbar" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+            <div class="navbar-collapse collapse"> <!--Меню сворачивается в выпадающий btn-->
+                <ul class="navbar-nav"> <!--меню, которое будет придвинуто к правой стороне -->
+                    <li class="nav-item"><a href="#about" class="nav-link nav_li">Главная </a></li>
+                    <li class="nav-item"><a href="#heading" class="nav-link nav_li">Содержание </a></li>
+                    <li class="nav-item"><a href="#screenshots" class="nav-link nav_li">Другие картинки </a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link nav_li">Информация </a></li>
+                    <li class="nav-item"><a href="#knopki" class="nav-link nav_li">#В разработке</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Карусель-->
+    <div id="carouselControl" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="active carousel-item">
+                <img src="img/1chevca098.jpg" alt="Машина уехала" />
+                <div class="container">
+                    <div class="carousel-caption poz1">
+                        <h1 class="title_camaro">Chevrolet Camaro</h1>
+                        <p class="lead text_title_camaro">Прекрасная и стильная машина</p>
+                        <a class="btn btn-large btn-info pull-right">Download now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/bmw.jpg" alt="И эта уехала">
+                <div class="container">
+                    <div class="carousel-caption poz2">
+                        <h1 class="title_bmw">BMW M3 GTR</h1>
+                        <p class="lead text_title_bmw">"Та самая" машина</p>
+                        <a class="btn btn-large btn-info pull-right">Download now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControl" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControl" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Основное-->
+    <div class="container">
+        <div id="about">
+            <div id ="heading">
+                <h1> Немного об этих машинах </h1>
+                <p class="lead" style="font-size:24px;">Данные машины не только выглядят прекрасно, но и ездят соответствующе. Чуть подробнее (капельку) можно прочитать ниже</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row">
+                <div class="col-5">
+                    <img src="img/chevca074.jpg" class="img-polaroid" style="width:100%" alt="" />
+                </div>
+                <div class="col-7">
+                    <h2>Chevrolet Camaro</h2>
+                    <p class="lead shrift">Данная машина в 2009 году была способна развивать скорость до 245 км/ч. Позже, в 2015 году, была выпущена экстремальная модель ZL1. Разгон, торможение и управляемость этого автомобиля находятся на уровне лучших гоночных моделей, но он полностью пригоден для движения по дорогам общего пользования. Сейчас Camaro ZL1 с лучшей комплектацией способна разогнаться до 100 км/ч за 3.5с </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-7">
+                    <h2>BMW M3 GTR</h2>
+                    <p class="lead shrift">Это "та самая" машина с синей уникальной аппликацией. BMW M3 GTR в кузове E46 увидел свет в феврале 2001 года и стал первым M3 в истории компании, оснащенным двигателем V8. Ее разгон до 100 км/ч за 4 секунды! Максимальная возможная скорость 300км/ч. Однако данных машин было выпущено очень мало. Один из известных раньше владельцев был Кларенс Каллахэн a.k.a. Razor</p>
+
+                </div>
+                <div class="col-5">
+                    <img src="img/scale_1200.jpg" class="img-polaroid" style="width:100%" alt="" />
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div id="screenshots" class="row">
+                <h1>Фото других интересных машин</h1>
+                <div class="col-2">
+                    <a href="https://ru.wikipedia.org/wiki/Bugatti_Veyron"> <img class="img-polaroid" src="img/bugatti-veyron.jpg" alt=""> </a>
+                    <a class="siteFoto" href="https://ru.wikipedia.org/wiki/Bugatti_Veyron" >Bugatti Veyron</a>
+                </div>
+                <div class="col-2">
+                    <a href="https://ru.wikipedia.org/wiki/Dodge_Viper"> <img class="img-polaroid" src="img/dodge-viper.jpg" alt=""></a>
+                    <a class="siteFoto" href="https://ru.wikipedia.org/wiki/Dodge_Viper" >Dodge Viper</a>
+                </div>
+                <div class="col-2">
+                    <a href="https://ru.wikipedia.org/wiki/Lamborghini"><img class="img-polaroid" src="img/lamborghini.jpg" alt=""></a>
+                    <a class="siteFoto" href="https://ru.wikipedia.org/wiki/Lamborghini" >Lamborghini</a>
+                </div>
+                <div class="col-2">
+                    <a href="https://ru.wikipedia.org/wiki/Chevrolet_Captiva"><img class="img-polaroid" src="img/Captiva.jpg" alt=""></a>
+                    <a class="siteFoto" href="https://ru.wikipedia.org/wiki/Chevrolet_Captiva" >Chevrolet Captiva</a>
+                </div>
+                <div class="col-2">
+                    <a href="https://ru.wikipedia.org/wiki/Ferrari"><img class="img-polaroid" src="img/Ferrari.jpg" alt=""></a>
+                    <a class="siteFoto" href="https://ru.wikipedia.org/wiki/Ferrari" >Ferrari</a>
+                </div>
+                <div class="col-2">
+                    <a href="https://ru.wikipedia.org/wiki/Lotus_Cars"><img class="img-polaroid" src="img/lotus.jpg" alt=""></a>
+                    <a class="siteFoto" href="https://ru.wikipedia.org/wiki/Lotus_Cars">Lotus</a>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row" id="features">
+                <div class="col-4">
+                    <img class="featuresImg" src="img/gear-icon.png"  alt="">
+                    <h3 class="featuresH3">Настройки фона</h3>
+                    <p>Вы можете изменить фон сайта, выбрав ниже цвет и нажав галочку.
+                        Для отмены обновите страницу или нажмите крестик</p>
+                    <div class="row" style="padding-top: 0px">
+                        <div class="col-3"></div>
+                        <div class="col-2">
+                            <input id="colorBg" type="color" name="colorBg" value="#000000" style="transform:scale(1.4);">
+                        </div>
+                        <div class="col-2">
+                            <button id="buttonColorBg" type="button" name="buttonColorBg" style="width:100%;" onClick="changeBg()"> <img src="img/ok.png" style="width:100%;" alt=""> </button>
+                        </div>
+                        <div class="col-2">
+                            <button id="buttonColorBack" type="button" name="buttonColorBack" style="width:100%;" onClick="changeBack()"> <img src="img/X.png" style="width:100%;" alt=""> </button>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img class="featuresImg" src="img/free-icon-picture-5614670.png" alt="">
+                    <h3 class="featuresH3">Больше информации</h3>
+                    <p>Для большей информации о <a href="https://ru.wikipedia.org/wiki/Chevrolet_Camaro">Chevrolet Camaro</a> и о <a href="https://bmwguide.ru/bmw-e46-m3-gtr/">BMW M3 GTR</a> кликните на соответствующие ссылки</p>
+                </div>
+                <div class="col-4">
+                    <img class="featuresImg" src="img/premium-icon-download-4254082.png" alt="">
+                    <h3 class="featuresH3">Скачивание картинок</h3>
+                    <p>Пока не работает, поэтому: ПКМ по картинке -> Сохранить как </p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div id="knopki" >
+                <ul class="list-group list-group-horizontal">
+                    <li style="list-style-type: none;"><a href="#" class="list-group-item list-group-item-success btn btn-large btn-success"> Еще будут полезными</a> </li>
+                    <li style="list-style-type: none;"><a href="#" class="list-group-item list-group-item-primary btn btn-large btn-info"> А пока - нет</a> </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Нижняя часть-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col-5">
+                    <h3>О сайте</h3>
+                    <p>Сайт создан для научного интереса и практики. Полезной информации о машинах Вы здесь особо не найдете... пока что. Но все может измениться</p>
+                </div>
+                <div class="col-5">
+                    <h3>Информация</h3>
+                    <p>Подписывайтесь, чтобы получать уведомления об изменениях на сайте</p>
+                    <form action="" class="form-inline">
+                        <input type="text" class="input-large" placeholder="Email"/>
+                        <buttom type="submit" class="btn btn-info">Подписаться</buttom>
+                    </form>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <div class="row" style="padding-top:15px; padding-bottom:35px;" >
+                <div class="footer-icons">
+                    <p><small>Copyright 2022, ИП(почти) "Мишган"</small></p>
+                    <a href="https://ru.wikipedia.org/wiki/Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://ru.wikipedia.org/wiki/Твиттер"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

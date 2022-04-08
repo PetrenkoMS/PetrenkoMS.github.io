@@ -1,0 +1,156 @@
+body {
+    margin-top:75px;
+    background: none;
+}
+
+
+
+@font-face {
+    font-family: graf;
+    src: url("../font/graf.ttf");
+}
+
+@font-face {
+    font-family: logo;
+    src: url("../font/logo.ttf");
+}
+
+.redLineAndJustify {
+    text-index: 5%;
+    text-align:justify;
+}
+
+.shrift {
+    font-size:22px;
+}
+
+.logotip::first-letter{
+    font-family: logo;
+    font-size:160%;
+    padding-right:7px;
+}
+.logotip{
+    color:black;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.title_camaro {
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: #C51D34;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.text_title_camaro {
+    font-size:30px;
+    color:#DBD7D2;
+    -webkit-text-stroke: 0.5px white;
+}
+
+.title_bmw {
+    font-family:graf;
+    color: #2330BE;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 150;
+    -webkit-text-stroke: 2.3px #000000;
+}
+
+.text_title_bmw {
+    font-size:30px;
+    color: #1A1849;
+    font-weight:600;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.navbar-inverse {
+    background-color: #171E6D;
+}
+
+.nav_li {
+    color: #DBD7D2;
+    font-size: 20px;
+}
+
+
+.carousel-item img{
+    width: 100%;
+}
+
+
+.carousel-caption{
+    background:none;
+    max-width:800px;
+
+}
+
+.carousel-caption a{
+    margin-top: 20px;
+}
+
+.poz1 {
+    top:40px;
+    left:20px;
+}
+
+.poz2 {
+    top:40px;
+    left:800px;
+}
+
+.siteFoto {
+    color: black;
+    text-decoration:none;
+}
+
+.featuresImg {
+    width:10%;
+    text-align:center;
+}
+
+.divider{
+    background-image: url("../img/razdel1.png");
+    background-repeat: repeat-x;
+    height:30px;
+    width:100%;
+}
+/*Выравнивание*/
+
+#screenshots div img{
+    width:100%;
+}
+
+#heading, #screenshots, #features, #knopki {
+    text-align:center;
+    padding: 50px 0px;
+}
+
+#about div.row{
+    padding: 50px 0px;
+}
+
+#screenshots h1{
+    padding-bottom:50px;
+}
+
+.featuresH3{
+    margin-top:10px;
+}
+/*Footer*/
+
+footer{
+    background-image: url("../img/footer1.jpg");
+    color: #D0D0D0;
+    padding-top:20px;
+}
+
+.col-5 {
+    text-align: justify;
+}
+
+.footer-icons {
+    text-align: center;
+}
+
